@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 'stable'
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+    - release\/.*
+    - develop
+install:
+  - yarn install
+stages:
+  - lint
+  - test
+  - build
+jobs:
+  include:
+    - stage: lint
+      script:
+        - yarn lint
+    - stage: test
+      script:
+        - yarn test
+    - stage: build
+      script:
+        - yarn build
