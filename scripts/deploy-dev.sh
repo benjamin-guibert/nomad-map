@@ -19,5 +19,5 @@ yarn lint
 yarn test
 yarn build
 
-sudo rm -r $WWWW_PATH/*
+sudo rm -rf $WWWW_PATH/*
 sudo cp -r dist/* $WWWW_PATH
