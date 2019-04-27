@@ -40,11 +40,7 @@ export default {
       const groupedTravels = _.groupBy(this.travels, 'status.id')
       const travelLinks = {}
       _.forEach(groupedTravels, (travels, status) => {
-        travelLinks[status] =
-          '#timeline-item-' +
-          _.maxBy(travels, travel => {
-            return travel.id
-          }).id
+        travelLinks[status] = '#timeline-item-' + _.maxBy(travels, 'id').id
       })
       return travelLinks
     }
