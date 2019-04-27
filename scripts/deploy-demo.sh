@@ -4,8 +4,8 @@ PATH=$PATH:/bin:/usr/bin:/home/linuxbrew/.linuxbrew/bin
 export PATH
 
 REPOSITORY_PATH="${HOME}/development/personnal/nomad-map"
-WWWW_PATH="/var/www/nomad-map/dev"
-BRANCH="develop"
+WWWW_PATH="/var/www/nomad-map/demo"
+BRANCH="master"
 
 set -e
 
