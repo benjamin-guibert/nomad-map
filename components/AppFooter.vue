@@ -3,9 +3,9 @@
     <div class="container">
       <p class="d-inline mx-1">Benjamin Guibert</p>
       <b-link
-        href="https://github.com/benjamin-guibert"
+        href="https://github.com/benjamin-guibert/nomad-map"
         target="_blank"
-        title="GitHub"
+        title="View this project on GitHub"
       >
         <font-awesome-icon class="mx-1" :icon="['fab', 'github']" size="lg" />
       </b-link>
