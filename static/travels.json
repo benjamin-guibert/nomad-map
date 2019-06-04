@@ -90,13 +90,13 @@
       "from": "2099-01-02"
     },
     "country": {
-      "id": "MA",
-      "name": "Morocco"
+      "id": "GR",
+      "name": "Greece"
     },
     "city": {
-      "name": "Casablanca",
-      "latitude": 33.5731,
-      "longitude": -7.5898
+      "name": "Athens",
+      "latitude": 37.966667,
+      "longitude": 23.716667
     }
   }
 ]
