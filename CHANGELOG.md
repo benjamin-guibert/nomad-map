@@ -1,5 +1,7 @@
 # Changelog
 
+- 0.2.2:
+  - **Fix** zoom to target top limit
 - 0.2.1:
   - **Fix** zoom to target top limit
 - 0.2.0:
