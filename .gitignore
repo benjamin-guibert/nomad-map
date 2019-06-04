@@ -1,6 +1,8 @@
-# Scripts
-
-start-deploy-*.sh
+# Ansible
+.ansible/production
+.ansible/group_vars/production.yml
+.ansible/stage
+.ansible/group_vars/stage.yml
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template

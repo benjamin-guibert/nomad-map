@@ -1,0 +1,17 @@
+---
+- name: Remove WWW directory content
+  become: yes
+  file:
+    path: '{{ www_path }}/'
+    state: absent
+- name: Copy deployed files to the WWW directory
+  become: yes
+  command: 'cp -r {{ dest_path }}/. {{ www_path }}'
+- name: Change WWW directory permissions
+  become: yes
+  file:
+    path: '{{ www_path }}'
+    recurse: true
+    owner: '{{ www_user }}'
+    group: '{{ www_user }}'
+    mode: '0775'

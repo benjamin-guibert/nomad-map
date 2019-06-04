@@ -1,0 +1,28 @@
+---
+- name: Remove build directory content
+  become: yes
+  file:
+    path: '{{ build_path }}/'
+    state: absent
+- name: Pull the Nuxt.js SPA Builder image
+  docker_image:
+    name: bguibert/nuxtjs-spa-builder
+    source: pull
+    force_source: yes
+- name: Create the Nuxt.js SPA Builder container & build
+  docker_container:
+    name: nuxtjs-spa-builder
+    image: bguibert/nuxtjs-spa-builder
+    detach: no
+    state: started
+    volumes:
+      - '{{ source_path }}:/usr/src/app:rw'
+      - '{{ build_path }}:/var/build:rw'
+- name: Change deployed directory permissions
+  become: yes
+  file:
+    path: '{{ dest_path }}'
+    recurse: true
+    owner: '{{ ansible_ssh_user }}'
+    group: '{{ ansible_ssh_user }}'
+    mode: '0775'
