@@ -1,0 +1,4 @@
+---
+environment_name: <environment>
+git_branch: master
+nginx_site_name: <nginx_site_name>

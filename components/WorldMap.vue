@@ -228,7 +228,7 @@ export default {
           country.isActive = true
         }
 
-        map.zoomToRectangle(north + 2, east + 1, south - 1, west - 1, 1, true)
+        map.zoomToRectangle(north + 4, east + 1, south - 1, west - 1, 1, true)
       })
 
       map.events.on('ready', () => {
@@ -251,7 +251,7 @@ export default {
           country.isActive = true
         }
 
-        map.zoomToRectangle(north + 1, east + 1, south - 1, west - 1, 1, true)
+        map.zoomToRectangle(north + 4, east + 1, south - 1, west - 1, 1, true)
       })
     },
     createMap() {

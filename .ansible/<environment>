@@ -1,0 +1,5 @@
+[front]
+<server>
+
+[<environment>:children]
+front

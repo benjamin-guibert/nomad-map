@@ -20,11 +20,7 @@ export default {
   /**
    * Plugins
    */
-  plugins: [
-    '~/plugins/vue-base-components',
-    '~/plugins/vue-flag-icon',
-    '~/plugins/vue-scrollto.js'
-  ],
+  plugins: ['~/plugins/vue-flag-icon', '~/plugins/vue-scrollto.js'],
   /*
    ** Nuxt.js modules
    */
