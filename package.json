@@ -1,6 +1,6 @@
 {
   "name": "nomad-map",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Interactive world map with a travel timeline for nomads.",
   "author": "Benjamin Guibert <contact@bguibert.com>",
   "private": true,
