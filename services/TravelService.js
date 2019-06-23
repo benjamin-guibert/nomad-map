@@ -21,11 +21,15 @@ const initializeTravel = (travel, index) => {
   travel.id = index
   if (travel.dates) {
     travel.dates.from = new Date(travel.dates.from)
+    travel.dates.from.setHours(0, 0, 0, 0)
 
     if (travel.dates.to) {
       travel.dates.to = new Date(travel.dates.to)
+      travel.dates.to.setHours(0, 0, 0, 0)
     }
     const today = new Date()
+    today.setHours(0, 0, 0, 0)
+
     if (today > travel.dates.to) {
       travel.status = {
         id: 'visited',
