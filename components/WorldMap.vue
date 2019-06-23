@@ -27,7 +27,7 @@ const colors = {
     next: '#9A4402'
   },
   line: {
-    previous: '#5A781E',
+    previous: '#A5DC38',
     next: '#FEAD6F'
   }
 }
