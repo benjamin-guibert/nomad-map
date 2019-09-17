@@ -1,5 +1,7 @@
 # Changelog
 
+- 0.2.4:
+  - **Fix** current travel already visited
 - 0.2.3:
   - **Update** previous line color
   - **Fix** travel status compared to today

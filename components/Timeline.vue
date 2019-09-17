@@ -27,11 +27,20 @@ export default {
     }
   },
   computed: {
+    /**
+     * Get reversed travels.
+     * @return {Array} The reversed travels.
+     */
     reversedTravels() {
       return _.reverse(this.travels)
     }
   },
   methods: {
+    /**
+     * Get the orientation (left of right) of the travel on the timeline based on its index.
+     * @param {Number} index The index of the travel.
+     * @return {String} The orientation (left or right)
+     */
     getOrientation(index) {
       return index % 2 === 0 ? 'left' : 'right'
     }

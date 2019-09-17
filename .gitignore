@@ -1,6 +1,8 @@
 # Ansible
 .ansible/production
 .ansible/group_vars/production.yml
+.ansible/demo
+.ansible/group_vars/demo.yml
 .ansible/stage
 .ansible/group_vars/stage.yml
 

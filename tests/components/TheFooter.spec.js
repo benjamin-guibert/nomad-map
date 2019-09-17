@@ -1,12 +1,12 @@
 import { createLocalVue, mount } from '@vue/test-utils'
 import BootstrapVue from 'bootstrap-vue'
-import AppFooter from '@/components/AppFooter.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 const localVue = createLocalVue()
 localVue.use(BootstrapVue)
 
-describe('AppFooter', () => {
-  const wrapper = mount(AppFooter, {
+describe('TheFooter', () => {
+  const wrapper = mount(TheFooter, {
     localVue,
     stubs: {
       FontAwesomeIcon: true

@@ -4,11 +4,11 @@
       error
     }}</b-alert>
     <template v-if="travels.length">
-      <app-navigation :travel-links="travelLinks" />
+      <the-navigation :travel-links="travelLinks" />
       <world-map :travels="travels" />
       <timeline :travels="travels" />
     </template>
-    <app-footer />
+    <the-footer />
   </div>
 </template>
 
@@ -17,15 +17,15 @@ import _ from 'lodash'
 
 import TravelService from '~/services/TravelService'
 
-import AppNavigation from '~/components/AppNavigation.vue'
-import AppFooter from '~/components/AppFooter.vue'
+import TheNavigation from '~/components/TheNavigation.vue'
+import TheFooter from '~/components/TheFooter.vue'
 import WorldMap from '~/components/WorldMap.vue'
 import Timeline from '~/components/Timeline.vue'
 
 export default {
   components: {
-    AppNavigation,
-    AppFooter,
+    TheNavigation,
+    TheFooter,
     WorldMap,
     Timeline
   },
