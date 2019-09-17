@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     countries() {
-      const countries = _.map(this.travels, travel => {
+      return _.map(this.travels, travel => {
         return {
           id: travel.country.id,
           name: travel.country.name,
@@ -54,8 +54,6 @@ export default {
           fill: this.getCountryColorFromStatus(travel.status)
         }
       })
-
-      return _.reverse(countries)
     },
     cities() {
       return _.map(this.travels, travel => {
